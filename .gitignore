@@ -1,0 +1,6 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entornos y dependencias (por si usan Node más adelante)
+node_modules/
