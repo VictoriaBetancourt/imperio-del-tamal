@@ -1,0 +1,79 @@
+/* Variables con la paleta de colores oficial del proyecto */
+:root {
+    --verde-tamal: #1E4D2B;       /* Verde hoja de tamal[cite: 12] */
+    --amarillo-maiz: #F4C430;     /* Amarillo maíz para botones[cite: 12] */
+    --naranja-terracota: #E25822; /* Naranja de apoyo[cite: 12] */
+    --fondo-claro: #FFF9F0;       /* Fondo general cálido[cite: 12] */
+    --texto-oscuro: #263238;      /* Texto principal legible[cite: 12] */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Tipografía para textos y botones[cite: 12] */
+    background-color: var(--fondo-claro);
+    color: var(--texto-oscuro);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Tipografía para títulos[cite: 12] */
+    color: var(--verde-tamal);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--naranja-terracota);
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px; /* Bordes redondeados sugeridos en el reporte[cite: 12] */
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--amarillo-maiz);
+    color: var(--texto-oscuro);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #e5b325;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--verde-tamal);
+    color: var(--verde-tamal);
+}
+
+.btn-secondary:hover {
+    background-color: var(--verde-tamal);
+    color: white;
+}
