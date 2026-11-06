@@ -1,0 +1,386 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2036 >>
+stream
+0.80 w 0.150 0.150 0.150 RG 28.0 28.0 556.0 736.0 re S
+1.50 w 1.000 1.000 1.000 rg 0.800 0.100 0.100 RG 486.0 668.0 72.0 78.0 re B
+1.00 w 0.800 0.100 0.100 RG 496.0 678.0 52.0 58.0 re S
+BT /F2 6.5 Tf 0.800 0.100 0.100 rg 498.0 738.0 Td (DE ESTUDIOS) Tj ET
+BT /F2 11 Tf 0.800 0.100 0.100 rg 510.0 704.0 Td (TESE) Tj ET
+BT /F2 6.5 Tf 0.800 0.100 0.100 rg 498.0 670.0 Td (DE ECATEPEC) Tj ET
+BT /F1 19 Tf 0.000 0.000 0.000 rg 147.2 685.0 Td (Tecnol\363gico de Estudios Superiores) Tj ET
+BT /F1 19 Tf 0.000 0.000 0.000 rg 248.9 658.0 Td (de Ecatepec.) Tj ET
+BT /F1 13.5 Tf 0.000 0.000 0.000 rg 140.2 632.0 Td (Divisi\363n de Ingenier\355a en Sistemas Computacionales.) Tj ET
+BT /F1 16 Tf 0.000 0.000 0.000 rg 187.8 575.0 Td (Programaci\363n Web \(AEB-1055\).) Tj ET
+BT /F1 16 Tf 0.000 0.000 0.000 rg 154.1 545.0 Td (Profesora: Alejandra Gonz\341lez S\341nchez.) Tj ET
+BT /F2 16.5 Tf 0.000 0.000 0.000 rg 189.3 485.0 Td (Proyecto: Imperio del Tamal.) Tj ET
+BT /F2 16.5 Tf 0.000 0.000 0.000 rg 121.8 460.0 Td (Simulador de negocio multisucursal en CDMX.) Tj ET
+BT /F1 15 Tf 0.000 0.000 0.000 rg 139.8 432.0 Td (Reporte T\351cnico de Implementaci\363n \227 Parcial 2:) Tj ET
+BT /F1 13.5 Tf 0.000 0.000 0.000 rg 89.3 410.0 Td (Interfaz Web \(Tema 2\), Programaci\363n del Lado del Cliente \(Tema 3\)) Tj ET
+BT /F1 13.5 Tf 0.000 0.000 0.000 rg 98.6 390.0 Td (y Programaci\363n del Lado del Servidor con Persistencia \(Tema 4\).) Tj ET
+BT /F2 15.5 Tf 0.000 0.000 0.000 rg 211.4 330.0 Td (Integrantes \(Equipo 09\):) Tj ET
+BT /F1 14 Tf 0.000 0.000 0.000 rg 180.4 298.0 Td (Fern\341ndez Mart\355nez Diego \(202110011\).) Tj ET
+BT /F1 14 Tf 0.000 0.000 0.000 rg 171.3 270.0 Td (Garc\355a Esquivel Mitzi Cecilia \(202121190\).) Tj ET
+BT /F1 14 Tf 0.000 0.000 0.000 rg 150.4 242.0 Td (Montes Betancourt Mar\355a Victoria \(202121271\).) Tj ET
+BT /F1 14 Tf 0.000 0.000 0.000 rg 167.4 214.0 Td (Tejeda Ju\341rez \301ngel Androth \(202210130\).) Tj ET
+BT /F1 14 Tf 0.000 0.000 0.000 rg 150.2 186.0 Td (Zamora Navarro Madelein Laura T \(202120404\).) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 6628 >>
+stream
+0.80 w 0.150 0.150 0.150 RG 28.0 28.0 556.0 736.0 re S
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 715.0 Td (PARTE 1: TEMA 2. IMPLEMENTACI\323N DE INTERFAZ WEB \(HTML5, XML Y) Tj ET
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 697.5 Td (CSS3\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 676.0 Td (Durante la continuaci\363n del proyecto se concluy\363 la construcci\363n integral de las cuatro pantallas del) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 661.0 Td (simulador Imperio del Tamal, aplicando las decisiones de dise\361o visual y experiencia de usuario) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 646.0 Td (\(UI/UX\) definidas por el equipo para evocar el ambiente tradicional y urbano de la Ciudad de M\351xico) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 631.0 Td (combin\341ndolo con un tablero moderno de gesti\363n empresarial.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 605.0 Td (1.1 Identidad Visual y Variables CSS Implementadas \(css/styles.css\)) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 587.5 Td (\225 Verde hoja de tamal \(#1E4D2B\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 242.8 587.5 Td (Color institucional aplicado en la barra lateral de navegaci\363n,) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 572.8 Td (encabezados, t\355tulos principales e indicadores de ganancia positiva.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 553.1 Td (\225 Amarillo ma\355z \(#F4C430\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 212.9 553.1 Td (Utilizado en botones de acci\363n primaria, barras de progreso de nivel,) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 538.4 Td (encabezados de tarjetas del men\372 e indicadores de estrellas por colonia.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 518.7 Td (\225 Naranja terracota \(#E25822\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 235.8 518.7 Td (Color de apoyo para alertas estrat\351gicas, apertura de nuevas) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 504.0 Td (sucursales y detalles gr\341ficos del vapor de la vaporera.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 484.3 Td (\225 Fondo c\341lido \(#FFF9F0\) y Texto oscuro \(#263238\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 339.7 484.3 Td (Garantizan alto contraste y legibilidad junto) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 469.6 Td (con la jerarqu\355a tipogr\341fica de Montserrat \(t\355tulos\) y Roboto \(datos y formularios\).) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 443.9 Td (1.2 Pantallas Funcionales Construidas) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 56.0 406.4 145.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 62.0 412.9 Td (Vista / Archivo) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 201.0 406.4 355.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 207.0 412.9 Td (Elementos Clave Implementados) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 346.4 145.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 394.4 Td (Pantalla 1: Inicio \(index.html\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 201.0 346.4 355.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 394.4 Td (Logo Imperio del Tamal, ilustraci\363n SVG de un puesto tradicional de tamales) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 381.9 Td (con vapor animado en la vaporera, frase "De un puesto a un imperio", bot\363n) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 369.4 Td ("Crear nueva partida" y bot\363n "Cargar partida" con modal conectado al) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 356.9 Td (servidor.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 286.4 145.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 334.4 Td (Pantalla 2: Selecci\363n de) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 321.9 Td (Ubicaci\363n \(ubicacion.html\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 201.0 286.4 355.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 334.4 Td (Mapa interactivo en SVG de la Ciudad de M\351xico con pines seleccionables para) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 321.9 Td (Polanco / Reforma, Coyoac\341n, N\341poles, Centro Hist\363rico y Buenavista.) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 309.4 Td (Muestra tarjetas din\341micas con estrellas de Demanda, Renta, Competencia y) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 296.9 Td (Flujo de clientes, m\341s el registro validado del nombre del negocio.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 226.4 145.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 274.4 Td (Pantalla 3: Configuraci\363n del) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 261.9 Td (Men\372 \(menu.html\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 201.0 226.4 355.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 274.4 Td (Cat\341logo dividido en TAMALES \(Verde, Mole, Oaxaque\361o, Rajas, Rojo,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 261.9 Td (Chocolate\) y BEBIDAS \(Champurrado, Atole de Vainilla, Caf\351 de Olla\). Permite) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 249.4 Td (activar/desactivar productos y modificar precios calculando en vivo la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 236.9 Td (Inversi\363n Inicial \($4,500\) y la Ganancia Estimada por d\355a.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 166.4 145.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 214.4 Td (Pantalla 4: Dashboard) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 201.9 Td (Principal \(dashboard.html\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 201.0 166.4 355.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 214.4 Td (Interfaz SPA con barra lateral hacia 7 vistas: Dashboard, Sucursales, Crear) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 201.9 Td (sucursal, Men\372, Ventas, Reportes y Configuraci\363n. Incluye barra de progreso) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 189.4 Td (de 5 niveles, gr\341fica de \372ltimos 7 d\355as, tabla de rendimiento por sede y botones) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 207.0 176.9 Td (de acci\363n.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 148.4 Td (1.3 Uso de XML Estructurado \(data/catalogo.xml\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 130.9 Td (Para cumplir con el est\341ndar XML del Tema 2 y la capa de persistencia, se cre\363 el archivo) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 115.9 Td (data/catalogo.xml, el cual modela sem\341nticamente mediante nodos <ParametrosIniciales>,) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 100.9 Td (<NivelesProgreso>, <ZonasCDMX> y <CatalogoProductos> toda la configuraci\363n base del simulador.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 6596 >>
+stream
+0.80 w 0.150 0.150 0.150 RG 28.0 28.0 556.0 736.0 re S
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 715.0 Td (PARTE 2: TEMA 3. PROGRAMACI\323N DEL LADO DEL CLIENTE \(PARCIAL 2\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 693.5 Td (El objetivo del Tema 3 consiste en desarrollar la l\363gica del lado del cliente en JavaScript para) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 678.5 Td (calcular ventas, costos y ganancias seg\372n la colonia, el men\372 y los precios elegidos por el jugador,) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 663.5 Td (validar todas sus decisiones en los formularios y actualizar el tablero din\341micamente) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 648.5 Td (descomponiendo el c\363digo en m\363dulos manejables.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 622.5 Td (2.1 Descomposici\363n Modular del Cliente \(/js/\)) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 56.0 585.0 150.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 62.0 591.5 Td (M\363dulo JavaScript) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 206.0 585.0 350.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 212.0 591.5 Td (Responsabilidad T\351cnica y Funciones Clave) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 525.0 150.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 573.0 Td (js/app.js \(M\363dulo Central) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 560.5 Td (ImperioApp\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 206.0 525.0 350.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 573.0 Td (Implementa el patr\363n Module \(IIFE\) que encapsula el cat\341logo de colonias de) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 560.5 Td (CDMX, el motor de c\341lculo en el cliente \(calcularSimulacionCliente\),) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 548.0 Td (formateadores de moneda y estrellas, notificaciones Toast y el cliente HTTP) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 535.5 Td (as\355ncrono \(apiFetch\) con respaldo local.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 477.5 150.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 513.0 Td (js/ubicacion.js \(Controlador) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 500.5 Td (de Mapa CDMX\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 206.0 477.5 350.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 513.0 Td (Escucha los eventos de clic en los pines del mapa SVG de la CDMX, actualiza en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 500.5 Td (el DOM las estrellas de Demanda, Renta, Competencia y Flujo de clientes, y) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 488.0 Td (valida que el nombre del negocio tenga m\355nimo 3 caracteres antes de avanzar.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 417.5 150.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 465.5 Td (js/menu.js \(Validaci\363n y) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 453.0 Td (Simulaci\363n Previa\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 206.0 417.5 350.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 465.5 Td (Renderiza las tarjetas de tamales y bebidas, valida que ning\372n precio de venta) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 453.0 Td (sea igual o menor al costo unitario de producci\363n \(Precio >= Costo + 1\),) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 440.5 Td (verifica que exista al menos un producto activo y recalcula en tiempo real la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 428.0 Td (ganancia diaria estimada.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 357.5 150.0 60.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 405.5 Td (js/dashboard.js \(Motor SPA) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 393.0 Td (del Tablero\)) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 206.0 357.5 350.0 60.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 405.5 Td (Administra la navegaci\363n Single Page Application entre las 7 vistas del) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 393.0 Td (sidebar sin recargar la p\341gina, genera din\341micamente la gr\341fica vectorial SVG) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 380.5 Td (de los \372ltimos 7 d\355as, filtra la tabla de ventas por sucursal y sincroniza las) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 212.0 368.0 Td (acciones con el servidor.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 339.5 Td (2.2 F\363rmulas Financieras y Reglas de Simulaci\363n en el Cliente) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 322.0 Td (Cada vez que el jugador modifica un precio, activa un producto, contrata un ayudante o simula un) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 307.0 Td (nuevo d\355a, el motor ejecuta las tres ecuaciones financieras oficiales del proyecto:) Tj ET
+0.80 w 0.950 0.970 1.000 rg 0.120 0.350 0.490 RG 81.0 231.0 450.0 62.0 re B
+BT /F2 10.5 Tf 0.120 0.350 0.490 rg 113.2 277.0 Td (Ingreso Total = Suma \(Unidades Vendidas por Producto x Precio de Venta\)) Tj ET
+BT /F2 10.5 Tf 0.120 0.350 0.490 rg 107.4 261.0 Td (Costos Totales = Costo de Insumos + Sueldos de Ayudantes + Renta por Zona) Tj ET
+BT /F2 10.5 Tf 0.120 0.350 0.490 rg 182.6 245.0 Td (Ganancia Neta = Ingreso Total - Costos Totales) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 215.0 Td (\225 Elasticidad de demanda por colonia:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 258.3 215.0 Td (Zonas corporativas como Polanco / Reforma \($650 renta/d\355a,) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 200.3 Td (210 clientes base\) toleran precios m\341s altos, mientras que zonas de flujo masivo como Centro) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 185.6 Td (Hist\363rico \($520 renta/d\355a, 235 clientes base\) premian precios competitivos.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 165.9 Td (\225 Capacidad operativa y ayudantes:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 248.9 165.9 Td (Un puesto sin ayudantes atiende hasta 95 unidades diarias; cada) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 151.2 Td (ayudante contratado \($600 costo de contrataci\363n y $350/d\355a de sueldo\) incrementa la capacidad en) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 136.5 Td (+65 unidades diarias.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 116.8 Td (\225 Sistema de Progreso de 5 Niveles:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 252.8 116.8 Td (El cliente eval\372a la ganancia acumulada para actualizar la barra) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 102.1 Td (de progreso desde Nivel 1 \(Puesto de Barrio\) hasta Nivel 5 \(Imperio del Tamal\).) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 7311 >>
+stream
+0.80 w 0.150 0.150 0.150 RG 28.0 28.0 556.0 736.0 re S
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 715.0 Td (PARTE 3: TEMA 4. PROGRAMACI\323N DEL LADO DEL SERVIDOR Y) Tj ET
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 697.5 Td (PERSISTENCIA \(PARCIAL 2\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 676.0 Td (Para cumplir con el Tema 4 del Parcial 2, se implement\363 el servidor backend en Node.js \(server.js\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 661.0 Td (bajo una arquitectura Cliente-Servidor en capas comunicada mediante una API REST en el puerto) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 646.0 Td (3000. El servidor resuelve el guardado y carga de partidas, valida la apertura de nuevas sucursales y) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 631.0 Td (genera reportes comparativos entre zonas de la CDMX.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 605.0 Td (3.1 Endpoints de la API REST en el Servidor \(server.js\)) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 56.0 567.5 160.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 62.0 574.0 Td (M\351todo y Endpoint) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 216.0 567.5 340.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 222.0 574.0 Td (Descripci\363n del Procesamiento en el Servidor) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 520.0 160.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 555.5 Td (GET /api/catalogo y) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 543.0 Td (/api/catalogo/xml) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 520.0 340.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 555.5 Td (Devuelve los par\341metros iniciales del negocio, los 5 niveles de crecimiento,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 543.0 Td (las colonias de la CDMX y el cat\341logo de productos tanto en JSON como en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 530.5 Td (XML.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 485.0 160.0 35.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 508.0 Td (GET /api/partidas y GET) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 495.5 Td (/api/partidas/:id) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 485.0 340.0 35.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 508.0 Td (Recupera desde data/partidas.json la lista de partidas guardadas o el) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 495.5 Td (estado completo de una partida espec\355fica y sus sucursales.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 437.5 160.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 473.0 Td (POST /api/partidas y PUT) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 460.5 Td (/api/partidas/:id) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 437.5 340.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 473.0 Td (Valida en el servidor los datos del negocio, crea una nueva partida) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 460.5 Td (ejecutando el D\355a 1 de operaci\363n o actualiza los precios y el men\372 de una) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 448.0 Td (partida existente.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 390.0 160.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 425.5 Td (POST /api/partidas/:id/simular) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 390.0 340.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 425.5 Td (Simula un nuevo d\355a de ventas en todas las sucursales activas del jugador,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 413.0 Td (actualiza el dinero disponible, el historial de los \372ltimos 7 d\355as y sincroniza) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 400.5 Td (el archivo CSV.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 342.5 160.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 378.0 Td (POST) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 365.5 Td (/api/partidas/:id/sucursales) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 342.5 340.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 378.0 Td (Procesa la apertura de una nueva sucursal en otra colonia de la CDMX) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 365.5 Td (validando que el jugador cuente con la inversi\363n requerida \($4,500\) y) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 353.0 Td (registrando alcald\355a, c\363digo postal y direcci\363n.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 307.5 160.0 35.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 330.5 Td (POST) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 318.0 Td (/api/partidas/:id/ayudantes) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 307.5 340.0 35.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 330.5 Td (Valida el capital disponible \($600\), incrementa la plantilla de ayudantes de la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 318.0 Td (sucursal seleccionada y recalcula su capacidad productiva.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 260.0 160.0 47.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 295.5 Td (GET /api/partidas/:id/reportes) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 260.0 340.0 47.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 295.5 Td (Genera el Reporte Comparativo entre Zonas y Sucursales: desglosa) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 283.0 Td (Insumos + Sueldos + Renta por sede, proyecta el Retorno de Inversi\363n \(ROI\)) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 270.5 Td (en las 5 zonas de CDMX y recomienda d\363nde expandir.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 225.0 160.0 35.0 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 248.0 Td (GET) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 235.5 Td (/api/partidas/:id/exportar/:formato) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 216.0 225.0 340.0 35.0 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 248.0 Td (Genera y descarga en tiempo real los reportes y el estado del negocio en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 222.0 235.5 Td (formatos estructurados JSON, XML y CSV.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 207.0 Td (3.2 Persistencia Multi-formato en la Capa de Datos \(/data/\)) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 189.5 Td (\225 data/partidas.json:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 181.5 189.5 Td (Almacena de forma estructurada todas las partidas de los jugadores, sus) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 174.8 Td (sucursales activas, configuraci\363n de precios, m\351tricas del d\355a y serie de los \372ltimos 7 d\355as.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 155.1 Td (\225 data/catalogo.xml:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 176.2 155.1 Td (Almacena en formato XML est\341ndar las reglas de las colonias de la CDMX,) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 140.4 Td (niveles de progreso y cat\341logo oficial de tamales y bebidas.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 120.7 Td (\225 data/historial_ventas.csv:) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 215.9 120.7 Td (Bit\341cora tabular separada por comas que se actualiza autom\341ticamente) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 106.0 Td (en cada jornada simulada para su consulta en hojas de c\341lculo.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 8722 >>
+stream
+0.80 w 0.150 0.150 0.150 RG 28.0 28.0 556.0 736.0 re S
+BT /F2 12.5 Tf 0.120 0.350 0.490 rg 56.0 715.0 Td (PARTE 4: APORTACI\323N POR ROL Y GUION DE PRESENTACI\323N \(EQUIPO 09\)) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 693.5 Td (A continuaci\363n se documenta la participaci\363n t\351cnica de cada integrante del Equipo 09 durante el) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 678.5 Td (Segundo Parcial, as\355 como la estructura de exposici\363n para la demostraci\363n en video del simulador) Tj ET
+BT /F1 10.5 Tf 0.000 0.000 0.000 rg 56.0 663.5 Td (funcionando:) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 56.0 623.5 135.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 62.0 630.0 Td (Integrante y Rol) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 191.0 623.5 185.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 197.0 630.0 Td (M\363dulos Implementados en Parcial 2) Tj ET
+0.70 w 0.080 0.360 0.480 rg 0.550 0.750 0.880 RG 376.0 623.5 180.0 20.0 re B
+BT /F2 9.5 Tf 1.000 1.000 1.000 rg 382.0 630.0 Td (Demostraci\363n en el Video) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 551.0 135.0 72.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 611.5 Td (Montes Betancourt Mar\355a) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 599.0 Td (Victoria L\355der de) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 586.5 Td (Proyecto y Fullstack) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 191.0 551.0 185.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 611.5 Td (Integraci\363n general cliente-servidor,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 599.0 Td (estado global en js/app.js, flujo de) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 586.5 Td (inicio y carga de partidas en index.html) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 574.0 Td (y consolidaci\363n de documentaci\363n) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 561.5 Td (t\351cnica.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 376.0 551.0 180.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 611.5 Td (Presenta el objetivo del simulador, la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 599.0 Td (arquitectura en capas y demuestra la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 586.5 Td (Pantalla 1 \(Inicio y modal de Cargar) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 574.0 Td (Partida desde el servidor\).) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 478.5 135.0 72.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 539.0 Td (Zamora Navarro Madelein) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 526.5 Td (Laura Dise\361adora UI/UX) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 191.0 478.5 185.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 539.0 Td (Sistema de dise\361o en css/styles.css,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 526.5 Td (ilustraci\363n vectorial del puesto con) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 514.0 Td (vaporera, mapa visual interactivo de la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 501.5 Td (CDMX e indicadores de estrellas en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 489.0 Td (ubicacion.html.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 376.0 478.5 180.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 539.0 Td (Explica la identidad visual mexicana) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 526.5 Td (\(Verde tamal, Amarillo ma\355z,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 514.0 Td (Terracota\) y demuestra la selecci\363n) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 501.5 Td (estrat\351gica de colonias en el mapa de) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 489.0 Td (la CDMX.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 406.0 135.0 72.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 466.5 Td (Tejeda Ju\341rez \301ngel) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 454.0 Td (Androth Desarrollador) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 441.5 Td (Frontend) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 191.0 406.0 185.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 466.5 Td (Maquetaci\363n responsiva y l\363gica del) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 454.0 Td (cliente en js/ubicacion.js y js/menu.js,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 441.5 Td (validaci\363n de formularios y c\341lculo) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 429.0 Td (din\341mico de ganancia estimada en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 416.5 Td (menu.html.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 376.0 406.0 180.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 466.5 Td (Demuestra las validaciones en el) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 454.0 Td (cliente, la activaci\363n de tamales y) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 441.5 Td (bebidas, el ajuste de precios y la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 429.0 Td (actualizaci\363n instant\341nea del resumen) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 416.5 Td (de apertura.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 333.5 135.0 72.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 394.0 Td (Fern\341ndez Mart\355nez Diego) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 381.5 Td (Desarrollador Backend) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 191.0 333.5 185.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 394.0 Td (Motor de simulaci\363n financiera en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 381.5 Td (server.js y js/dashboard.js, endpoints) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 369.0 Td (REST de simulaci\363n diaria,) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 356.5 Td (contrataci\363n de ayudantes, barra de 5) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 344.0 Td (niveles y apertura de sucursales.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 376.0 333.5 180.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 394.0 Td (Explica las f\363rmulas financieras en el) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 381.5 Td (Dashboard Principal, simula nuevos) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 369.0 Td (d\355as operativos, contrata ayudantes e) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 356.5 Td (inaugura una nueva sucursal en otra) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 344.0 Td (alcald\355a.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 56.0 261.0 135.0 72.5 re B
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 321.5 Td (Garc\355a Esquivel Mitzi) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 309.0 Td (Cecilia Administradora de) Tj ET
+BT /F2 9.2 Tf 0.050 0.050 0.050 rg 62.0 296.5 Td (Persistencia y Datos) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 191.0 261.0 185.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 321.5 Td (Estructuraci\363n de datos en) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 309.0 Td (data/partidas.json, data/catalogo.xml) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 296.5 Td (y data/historial_ventas.csv, m\363dulo de) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 284.0 Td (reportes comparativos entre zonas y) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 197.0 271.5 Td (exportaci\363n.) Tj ET
+0.60 w 0.890 0.950 0.980 rg 0.550 0.750 0.880 RG 376.0 261.0 180.0 72.5 re B
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 321.5 Td (Demuestra el historial de ventas por) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 309.0 Td (sucursal, el Reporte Comparativo) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 296.5 Td (entre Zonas de la CDMX con) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 284.0 Td (recomendaci\363n de expansi\363n y la) Tj ET
+BT /F1 9.2 Tf 0.050 0.050 0.050 rg 382.0 271.5 Td (descarga en JSON, XML y CSV.) Tj ET
+BT /F2 11.5 Tf 0.118 0.302 0.169 rg 56.0 243.0 Td (4.1 Instrucciones de Ejecuci\363n Local y Despliegue Web) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 225.5 Td (\225 Ejecuci\363n con Servidor Node.js \(API REST activa\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 342.1 225.5 Td (Ejecutar el comando "npm start" o "node) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 210.8 Td (server.js" en la ra\355z del proyecto y abrir en el navegador http://localhost:3000.) Tj ET
+BT /F2 10.2 Tf 0.000 0.000 0.000 rg 70.0 191.1 Td (\225 Ejecuci\363n mediante Enlace P\372blico \(GitHub Pages\):) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 340.4 191.1 Td (Gracias al motor h\355brido programado en) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 176.4 Td (js/app.js, el proyecto tambi\351n funciona al 100% desde cualquier enlace p\372blico est\341tico como GitHub) Tj ET
+BT /F1 10.2 Tf 0.000 0.000 0.000 rg 70.0 161.7 Td (Pages sin requerir instalaci\363n previa.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000142 00000 n 
+0000000239 00000 n 
+0000000341 00000 n 
+0000002429 00000 n 
+0000002565 00000 n 
+0000009245 00000 n 
+0000009381 00000 n 
+0000016029 00000 n 
+0000016166 00000 n 
+0000023530 00000 n 
+0000023668 00000 n 
+0000032443 00000 n 
+trailer
+<< /Size 15 /Root 1 0 R >>
+startxref
+32581
+%%EOF

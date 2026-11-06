@@ -1,0 +1,12 @@
+PartidaID,Fecha,Dia,Sucursal,Producto,Cantidad,PrecioUnitario,Total
+partida-demo-1,06/11/2026,7,Polanco / Reforma,Tamal Verde,48,25,1200
+partida-demo-1,06/11/2026,7,Polanco / Reforma,Tamal Oaxaqueño,35,30,1050
+partida-demo-1,06/11/2026,7,Polanco / Reforma,Champurrado,35,22,770
+partida-demo-1,06/11/2026,7,Polanco / Reforma,Café de Olla,24,20,480
+partida-demo-1,06/11/2026,7,Coyoacán,Tamal de Mole,40,26,1040
+partida-demo-1,06/11/2026,7,Coyoacán,Tamal de Rajas,36,25,900
+partida-demo-1,06/11/2026,7,Coyoacán,Atole de Vainilla,43,20,860
+partida-demo-2,01/10/2026,12,Centro Histórico,Tamal Verde,25,25,625
+partida-demo-2,01/10/2026,12,Buenavista,Tamal Rojo,30,28,840
+partida-demo-2,01/10/2026,12,Coyoacán,Tamal de Mole,18,30,540
+partida-demo-2,01/10/2026,12,Centro Histórico,Atole de Vainilla,20,20,400

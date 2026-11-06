@@ -5,22 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperio del Tamal - Inicio</title>
     <!-- Tipografías oficiales del proyecto: Montserrat y Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="hero-container">
         <div class="hero-content">
+            <span class="hero-badge">🫔 Equipo 09 • Simulador de Gestión en CDMX</span>
+
+            <!-- Ilustración de un puesto de tamales con vapor de la vaporera (Pantalla 1 del reporte) -->
+            <svg class="hero-illustration" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Puesto de tamales en la CDMX">
+                <!-- Fondo circular cálido -->
+                <circle cx="120" cy="98" r="72" fill="#FFF4CC" />
+                <!-- Líneas de vapor de la vaporera -->
+                <path class="vapor-line" d="M98 42 C94 32, 104 26, 99 16" stroke="#E25822" stroke-width="3" stroke-linecap="round"/>
+                <path class="vapor-line delay-1" d="M114 38 C110 28, 120 22, 115 12" stroke="#1E4D2B" stroke-width="3" stroke-linecap="round"/>
+                <path class="vapor-line delay-2" d="M130 42 C126 32, 136 26, 131 16" stroke="#E25822" stroke-width="3" stroke-linecap="round"/>
+                <!-- Toldo tradicional del puesto -->
+                <path d="M45 62 L195 62 L208 84 L32 84 Z" fill="#1E4D2B" />
+                <path d="M55 62 L75 62 L70 84 L48 84 Z" fill="#F4C430" />
+                <path d="M95 62 L115 62 L113 84 L92 84 Z" fill="#F4C430" />
+                <path d="M135 62 L155 62 L158 84 L137 84 Z" fill="#F4C430" />
+                <path d="M175 62 L192 62 L200 84 L180 84 Z" fill="#F4C430" />
+                <!-- Postes del puesto -->
+                <rect x="48" y="84" width="6" height="46" fill="#546E7A" />
+                <rect x="186" y="84" width="6" height="46" fill="#546E7A" />
+                <!-- Olla / Vaporera de aluminio -->
+                <rect x="86" y="88" width="54" height="42" rx="6" fill="#B0BEC5" stroke="#263238" stroke-width="2.5"/>
+                <rect x="82" y="83" width="62" height="8" rx="4" fill="#90A4AE" stroke="#263238" stroke-width="2.5"/>
+                <rect x="105" y="77" width="16" height="6" rx="3" fill="#E25822" stroke="#263238" stroke-width="2"/>
+                <!-- Olla de atole junto a la vaporera -->
+                <rect x="148" y="98" width="28" height="32" rx="5" fill="#E25822" stroke="#263238" stroke-width="2.5"/>
+                <!-- Mostrador del puesto con letrero -->
+                <rect x="40" y="128" width="160" height="34" rx="6" fill="#F4C430" stroke="#1E4D2B" stroke-width="3"/>
+                <rect x="68" y="135" width="104" height="20" rx="4" fill="#1E4D2B"/>
+                <text x="120" y="149" text-anchor="middle" fill="#FFF9F0" font-family="Montserrat, sans-serif" font-size="10" font-weight="700">TAMALES Y ATOLE</text>
+                <!-- Ruedas del triciclo/puesto -->
+                <circle cx="68" cy="166" r="10" fill="#263238" />
+                <circle cx="68" cy="166" r="4" fill="#FFF9F0" />
+                <circle cx="172" cy="166" r="10" fill="#263238" />
+                <circle cx="172" cy="166" r="4" fill="#FFF9F0" />
+            </svg>
+
             <h1>Imperio del Tamal</h1>
             <p class="tagline">"De un puesto a un imperio"</p>
             <p class="description">Simulador de negocio multisucursal en la CDMX</p>
-            
+
+            <div class="hero-features">
+                <div class="hero-feature-pill">
+                    <strong>📍 5 Zonas de CDMX</strong>
+                    Polanco, Coyoacán, Nápoles, Centro y Buenavista.
+                </div>
+                <div class="hero-feature-pill">
+                    <strong>🫔 Menú y Precios</strong>
+                    Configura costos, márgenes y ayudantes por turno.
+                </div>
+                <div class="hero-feature-pill">
+                    <strong>📈 Expansión Real</strong>
+                    Abre sucursales, simula ventas y compara zonas.
+                </div>
+            </div>
+
             <div class="button-group">
                 <!-- Enlace hacia la siguiente pantalla de ubicación -->
-                <a href="ubicacion.html" class="btn btn-primary">Crear nueva partida</a>
-                <a href="#" class="btn btn-secondary">Cargar partida</a>
+                <a href="ubicacion.html" class="btn btn-primary" id="btnNuevaPartida">🚀 Crear nueva partida</a>
+                <button type="button" class="btn btn-secondary" id="btnAbrirModalCargar">📂 Cargar partida</button>
             </div>
         </div>
     </div>
+
+    <!-- Modal para Cargar Partida desde el Servidor (Tema 4) -->
+    <div class="modal-overlay" id="modalCargarPartida" role="dialog" aria-modal="true" aria-labelledby="tituloModalCargar">
+        <div class="modal-box">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <h3 id="tituloModalCargar" style="margin: 0; color: var(--verde-tamal);">📂 Cargar Partida Guardada</h3>
+                <button type="button" class="btn btn-sm btn-secondary" id="btnCerrarModalCargar">✕ Cerrar</button>
+            </div>
+            <p style="color: var(--texto-secundario); font-size: 0.92rem; margin-top: 0;">
+                Selecciona una partida almacenada en el servidor (<code>data/partidas.json</code>) para continuar administrando tus sucursales:
+            </p>
+            <div id="listaPartidasServidor">
+                <p>Cargando partidas del servidor...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

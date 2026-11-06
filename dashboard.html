@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperio del Tamal - Dashboard Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-shell">
+        <!-- Barra lateral de navegación (Páginas 8, 14, 15 y 16 del reporte) -->
+        <aside class="sidebar" aria-label="Menú principal del simulador">
+            <a href="index.html" class="sidebar-logo">
+                <span style="font-size: 1.8rem;">🫔</span>
+                <span class="sidebar-logo-text">Imperio<br>del Tamal</span>
+            </a>
+
+            <nav class="sidebar-nav">
+                <button type="button" class="nav-item active" data-vista="dashboard">
+                    <span>📊</span> <span>Dashboard</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="sucursales">
+                    <span>🏪</span> <span>Sucursales</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="crear-sucursal">
+                    <span>➕</span> <span>Crear sucursal</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="menu">
+                    <span>🫔</span> <span>Menú</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="ventas">
+                    <span>🧾</span> <span>Ventas</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="reportes">
+                    <span>📈</span> <span>Reportes</span>
+                </button>
+                <button type="button" class="nav-item" data-vista="configuracion">
+                    <span>⚙️</span> <span>Configuración</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div><strong>Equipo 09 • TESE</strong></div>
+                <div>Programación Web • Parcial 2</div>
+            </div>
+        </aside>
+
+        <!-- Área Principal -->
+        <div class="main-area">
+            <!-- Encabezado superior con indicadores del negocio (Pág. 12 del reporte) -->
+            <header class="dashboard-topbar">
+                <div class="topbar-title">
+                    <h2 id="headerNombreNegocio">IMPERIO DEL TAMAL</h2>
+                    <span id="headerSubtitulo">Simulador multisucursal en la Ciudad de México • Día <strong id="headerDiaActual">7</strong></span>
+                </div>
+
+                <div class="topbar-stats">
+                    <div class="stat-pill">
+                        💰 Dinero disponible: <strong id="topDineroDisponible">$12,450</strong>
+                    </div>
+                    <div class="stat-pill">
+                        ⭐ Popularidad: <strong id="topPopularidad">85%</strong>
+                    </div>
+                    <div class="stat-pill">
+                        🏪 Sucursales: <strong id="topNumSucursales">2</strong>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm" id="btnTopSimularDia">
+                        ☀️ Simular Día (+1)
+                    </button>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <!-- =========================================================
+                     VISTA 1: DASHBOARD PRINCIPAL (Páginas 12, 13 y 16)
+                     ========================================================= -->
+                <section class="vista-seccion activa" id="vista-dashboard">
+                    <!-- Sistema de Progreso de 5 Niveles (Pág. 13) -->
+                    <div class="progreso-imperio-card">
+                        <div class="progreso-header">
+                            <div>
+                                <span class="nivel-badge" id="progresoNivelNombre">NIVEL 2 — NEGOCIO LOCAL</span>
+                                <span style="margin-left: 10px; font-size: 0.88rem; opacity: 0.9;">
+                                    Ganancia acumulada: <strong id="progresoGananciaAcumulada">$16,000</strong>
+                                </span>
+                            </div>
+                            <strong id="progresoPorcentajeTexto" style="font-size: 1.1rem; color: var(--amarillo-maiz);">80%</strong>
+                        </div>
+                        <div class="barra-progreso-outer">
+                            <div class="barra-progreso-inner" id="progresoBarraFill" style="width: 80%;"></div>
+                        </div>
+                        <p class="progreso-objetivo" id="progresoObjetivoTexto">
+                            Próximo objetivo: "Alcanza $20,000 de ganancias acumuladas para desbloquear una nueva sucursal."
+                        </p>
+                    </div>
+
+                    <!-- Tarjetas principales: VENTAS HOY, COSTOS, GANANCIA, UNIDADES (Pág. 12 y 16) -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-label">VENTAS HOY</div>
+                            <div class="kpi-value positivo" id="kpiVentasHoy">$3,500</div>
+                            <div class="kpi-sub">Ingreso Total = Uds × Precio</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">COSTOS</div>
+                            <div class="kpi-value acento" id="kpiCostosHoy">$1,800</div>
+                            <div class="kpi-sub">Insumos + Sueldos + Renta</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">GANANCIA</div>
+                            <div class="kpi-value positivo" id="kpiGananciaHoy">$1,700</div>
+                            <div class="kpi-sub">Ganancia Neta del Día</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">TAMALES Y BEBIDAS VENDIDOS</div>
+                            <div class="kpi-value" id="kpiUnidadesHoy">252</div>
+                            <div class="kpi-sub">Unidades despachadas hoy</div>
+                        </div>
+                    </div>
+
+                    <!-- Gráfica de últimos 7 días y Tabla de Rendimiento por Sucursal (Pág. 12) -->
+                    <div class="dashboard-middle-grid">
+                        <div class="card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                <h3 style="margin: 0; color: var(--verde-tamal); font-size: 1.1rem;">
+                                    📈 RENDIMIENTO DE LOS ÚLTIMOS 7 DÍAS
+                                </h3>
+                                <div style="font-size: 0.8rem; display: flex; gap: 12px;">
+                                    <span><strong style="color: var(--verde-tamal);">●</strong> Ventas</span>
+                                    <span><strong style="color: var(--amarillo-maiz);">●</strong> Ganancias</span>
+                                </div>
+                            </div>
+                            <div class="chart-container" id="contenedorGrafica7Dias"></div>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="margin: 0 0 12px; color: var(--verde-tamal); font-size: 1.1rem;">
+                                🏪 RENDIMIENTO POR SUCURSAL
+                            </h3>
+                            <div style="overflow-x: auto;">
+                                <table class="tabla-moderna">
+                                    <thead>
+                                        <tr>
+                                            <th>Sucursal</th>
+                                            <th>Ventas</th>
+                                            <th>Ganancia</th>
+                                            <th>Popularidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablaRendimientoSucursales"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección ACCIONES (Pág. 12 y 13 del reporte) -->
+                    <div class="card">
+                        <h3 style="margin: 0 0 14px; color: var(--verde-tamal); font-size: 1.1rem;">⚡ ACCIONES</h3>
+                        <div class="acciones-bar">
+                            <button type="button" class="btn btn-primary" id="btnAccionSimularDia">
+                                ☀️ Simular siguiente día
+                            </button>
+                            <button type="button" class="btn btn-verde" id="btnAccionContratarAyudante">
+                                👨‍🍳 Contratar ayudante ($600)
+                            </button>
+                            <button type="button" class="btn btn-terracota" id="btnAccionAbrirSucursal">
+                                🏪 Abrir nueva sucursal
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="btnAccionModificarMenu">
+                                🫔 Modificar menú
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="btnAccionVerReportes">
+                                📈 Ver reportes
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="btnAccionGuardarPartida">
+                                💾 Guardar partida
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 2: SUCURSALES (Mockup Página 16)
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-sucursales">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                        <div>
+                            <h2 style="margin: 0; color: var(--verde-tamal);">Sucursales</h2>
+                            <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                                Administra las sucursales activas de tu negocio y su equipo de ayudantes en la CDMX.
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-terracota" id="btnIrNuevaSucursal">
+                            + Nueva sucursal
+                        </button>
+                    </div>
+
+                    <div class="sucursales-cards-grid" id="gridTarjetasSucursales"></div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 3: CREAR NUEVA SUCURSAL (Mockup Página 15)
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-crear-sucursal">
+                    <div style="margin-bottom: 20px;">
+                        <h2 style="margin: 0; color: var(--verde-tamal);">Crear nueva sucursal</h2>
+                        <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                            Registra la información de la nueva sucursal para expandir tu presencia en otra colonia de la Ciudad de México.
+                        </p>
+                    </div>
+
+                    <div class="card" style="max-width: 820px;">
+                        <form id="formNuevaSucursal" novalidate>
+                            <div class="form-2col">
+                                <div class="form-group">
+                                    <label for="sucNombre">Nombre de la sucursal *</label>
+                                    <input type="text" id="sucNombre" class="form-control" placeholder="Ej. Imperio del Tamal Centro" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sucZonaSelect">Colonia / Zona de CDMX *</label>
+                                    <select id="sucZonaSelect" class="form-control" required></select>
+                                </div>
+                            </div>
+
+                            <div class="form-2col">
+                                <div class="form-group">
+                                    <label for="sucAlcaldia">Alcaldía</label>
+                                    <input type="text" id="sucAlcaldia" class="form-control" placeholder="Seleccionar alcaldía" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sucCodigoPostal">Código postal</label>
+                                    <input type="text" id="sucCodigoPostal" class="form-control" placeholder="Ej. 06000">
+                                </div>
+                            </div>
+
+                            <div class="form-2col">
+                                <div class="form-group">
+                                    <label for="sucDireccion">Dirección *</label>
+                                    <input type="text" id="sucDireccion" class="form-control" placeholder="Calle, número exterior e interior" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sucAyudantes">Ayudantes iniciales</label>
+                                    <select id="sucAyudantes" class="form-control">
+                                        <option value="1" selected>1 Ayudante ($350 sueldo/día)</option>
+                                        <option value="2">2 Ayudantes ($700 sueldo/día)</option>
+                                        <option value="3">3 Ayudantes ($1,050 sueldo/día)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sucDescripcion">Descripción</label>
+                                <textarea id="sucDescripcion" class="form-control" rows="3" placeholder="Describe la sucursal..."></textarea>
+                            </div>
+
+                            <!-- Vista previa de costos y demanda de la zona elegida -->
+                            <div id="previewNuevaSucursal" style="background: var(--fondo-claro); border: 1px solid var(--borde-suave); border-radius: 10px; padding: 14px; margin-bottom: 18px; font-size: 0.9rem;"></div>
+
+                            <div class="form-error" id="errorNuevaSucursal" style="margin-bottom: 12px;"></div>
+
+                            <div style="display: flex; justify-content: flex-end; gap: 12px;">
+                                <button type="button" class="btn btn-secondary" id="btnCancelarSucursal">Cancelar</button>
+                                <button type="submit" class="btn btn-terracota">Guardar sucursal</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 4: MENÚ (Mockup Página 15)
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-menu">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                        <div>
+                            <h2 style="margin: 0; color: var(--verde-tamal);">Menú</h2>
+                            <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                                Productos disponibles en el negocio. Modifica precios o activa nuevas especialidades para todas tus sucursales.
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" class="btn btn-terracota" id="btnAbrirModalProducto">+ Agregar producto</button>
+                            <button type="button" class="btn btn-primary" id="btnGuardarCambiosMenu">💾 Guardar precios en servidor</button>
+                        </div>
+                    </div>
+
+                    <div class="productos-grid" id="gridMenuDashboard"></div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 5: VENTAS (Mockup Página 14)
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-ventas">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                        <div>
+                            <h2 style="margin: 0; color: var(--verde-tamal);">Ventas</h2>
+                            <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                                Consulta las ventas realizadas por las sucursales y filtra por sede.
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <select id="filtroVentasSucursal" class="form-control" style="width: 240px;">
+                                <option value="TODAS">Todas las sucursales</option>
+                            </select>
+                            <a href="#" class="btn btn-secondary btn-sm" id="btnDescargarVentasCSV">⬇️ Exportar CSV</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="overflow-x: auto;">
+                            <table class="tabla-moderna">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Día</th>
+                                        <th>Sucursal</th>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio Unit.</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaHistorialVentas"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 6: REPORTES COMPARATIVOS ENTRE ZONAS (Tema 4)
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-reportes">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                        <div>
+                            <h2 style="margin: 0; color: var(--verde-tamal);">Reportes Comparativos entre Zonas y Sedes</h2>
+                            <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                                Análisis generado por el servidor para evaluar el desempeño financiero por colonia y planear la expansión multisucursal.
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <button type="button" class="btn btn-secondary btn-sm" id="btnExportarJSON">📄 Descargar JSON</button>
+                            <button type="button" class="btn btn-secondary btn-sm" id="btnExportarXML">🗂️ Descargar XML</button>
+                            <button type="button" class="btn btn-secondary btn-sm" id="btnExportarCSV">📊 Descargar CSV</button>
+                        </div>
+                    </div>
+
+                    <!-- Recomendación del Plan de Expansión -->
+                    <div class="card" style="background: var(--verde-claro-bg); border-color: var(--verde-tamal); margin-bottom: 22px;">
+                        <h3 style="margin: 0 0 6px; color: var(--verde-tamal); font-size: 1.08rem;">
+                            🧭 Recomendación del Plan de Negocio y Expansión (Servidor)
+                        </h3>
+                        <p id="textoRecomendacionServidor" style="margin: 0; font-size: 0.95rem; color: var(--texto-oscuro);"></p>
+                    </div>
+
+                    <!-- Tabla 1: Comparativa Financiera de Sucursales Activas -->
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin: 0 0 12px; color: var(--verde-tamal);">
+                            1. Desglose Operativo de Sucursales Activas (Ingreso vs Insumos + Sueldos + Renta)
+                        </h3>
+                        <div style="overflow-x: auto;">
+                            <table class="tabla-moderna">
+                                <thead>
+                                    <tr>
+                                        <th>Sucursal</th>
+                                        <th>Colonia (Alcaldía)</th>
+                                        <th>Ayudantes</th>
+                                        <th>Ingreso Hoy</th>
+                                        <th>Insumos</th>
+                                        <th>Sueldos</th>
+                                        <th>Renta Zona</th>
+                                        <th>Ganancia Neta</th>
+                                        <th>Margen</th>
+                                        <th>Ganancia Acumulada</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaReporteSucursales"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tabla 2: Estudio de Mercado Comparativo de las 5 Zonas de CDMX -->
+                    <div class="card">
+                        <h3 style="margin: 0 0 12px; color: var(--verde-tamal);">
+                            2. Comparativa de Rentabilidad Potencial por Zona de la CDMX
+                        </h3>
+                        <div style="overflow-x: auto;">
+                            <table class="tabla-moderna">
+                                <thead>
+                                    <tr>
+                                        <th>Colonia / Zona</th>
+                                        <th>Alcaldía</th>
+                                        <th>Demanda</th>
+                                        <th>Renta Diaria</th>
+                                        <th>Inversión Apertura</th>
+                                        <th>Ventas Est. / Día</th>
+                                        <th>Ganancia Est. / Día</th>
+                                        <th>Retorno (ROI)</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaReporteZonasCDMX"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     VISTA 7: CONFIGURACIÓN Y PARTIDAS EN SERVIDOR
+                     ========================================================= -->
+                <section class="vista-seccion" id="vista-configuracion">
+                    <div style="margin-bottom: 20px;">
+                        <h2 style="margin: 0; color: var(--verde-tamal);">Configuración y Persistencia de Partidas</h2>
+                        <p style="margin: 4px 0 0; color: var(--texto-secundario);">
+                            Gestiona las partidas almacenadas en el servidor (JSON, XML y CSV) o cambia de partida activa.
+                        </p>
+                    </div>
+
+                    <div class="dashboard-middle-grid">
+                        <div class="card">
+                            <h3 style="color: var(--verde-tamal);">📝 Datos de la Partida Actual</h3>
+                            <div class="form-group">
+                                <label for="confNombreNegocio">Nombre del Negocio</label>
+                                <input type="text" id="confNombreNegocio" class="form-control">
+                            </div>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button type="button" class="btn btn-primary" id="btnGuardarConfigNegocio">
+                                    💾 Guardar en Servidor
+                                </button>
+                                <a href="ubicacion.html" class="btn btn-secondary">
+                                    🚀 Crear nueva partida desde cero
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="color: var(--verde-tamal);">🗄️ Partidas Guardadas en el Servidor</h3>
+                            <div id="contenedorPartidasConfig"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal para Agregar Nuevo Producto al Menú -->
+    <div class="modal-overlay" id="modalNuevoProducto" role="dialog" aria-modal="true">
+        <div class="modal-box" style="max-width: 480px;">
+            <h3 style="margin-top: 0; color: var(--verde-tamal);">🫔 Agregar Especialidad al Menú</h3>
+            <form id="formNuevoProducto">
+                <div class="form-group">
+                    <label for="nuevoProdNombre">Nombre del producto *</label>
+                    <input type="text" id="nuevoProdNombre" class="form-control" placeholder="Ej. Tamal de Piña / Atole de Guayaba" required>
+                </div>
+                <div class="form-2col">
+                    <div class="form-group">
+                        <label for="nuevoProdCategoria">Categoría</label>
+                        <select id="nuevoProdCategoria" class="form-control">
+                            <option value="TAMALES">TAMALES</option>
+                            <option value="BEBIDAS">BEBIDAS</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nuevoProdIcono">Icono</label>
+                        <select id="nuevoProdIcono" class="form-control">
+                            <option value="🫔">🫔 Tamal</option>
+                            <option value="🌶️">🌶️ Picante</option>
+                            <option value="🍓">🍓 Dulce</option>
+                            <option value="☕">☕ Bebida caliente</option>
+                            <option value="🥛">🥛 Atole</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-2col">
+                    <div class="form-group">
+                        <label for="nuevoProdCosto">Costo unitario ($) *</label>
+                        <input type="number" id="nuevoProdCosto" class="form-control" value="12" min="5" max="80" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nuevoProdPrecio">Precio de venta ($) *</label>
+                        <input type="number" id="nuevoProdPrecio" class="form-control" value="26" min="10" max="120" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nuevoProdDesc">Descripción corta</label>
+                    <input type="text" id="nuevoProdDesc" class="form-control" placeholder="Receta especial de la casa">
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px;">
+                    <button type="button" class="btn btn-secondary" id="btnCerrarModalProducto">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Agregar al menú</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

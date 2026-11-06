@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperio del Tamal - Selección de Ubicación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header consistente de la aplicación -->
+    <header class="top-navbar">
+        <a href="index.html" class="brand-logo">
+            <span>🫔</span>
+            <span>Imperio del Tamal</span>
+        </a>
+        <div class="wizard-steps">
+            <span class="step-badge active">1. Selección de Ubicación</span>
+            <span class="step-badge">2. Configuración del Menú</span>
+            <span class="step-badge">3. Dashboard Principal</span>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="page-header">
+            <h2>Pantalla 2 — Selección Estratégica de Ubicación en CDMX</h2>
+            <p>Elige en el mapa de la Ciudad de México la colonia donde colocarás tu primer puesto de tamales y registra el nombre de tu negocio.</p>
+        </div>
+
+        <div class="ubicacion-grid">
+            <!-- Columna Izquierda: Representación visual del Mapa de CDMX -->
+            <section class="card" aria-label="Mapa interactivo de colonias de la CDMX">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <h3 style="margin: 0; color: var(--verde-tamal);">🗺️ Mapa de Zonas Estratégicas (CDMX)</h3>
+                    <span style="font-size: 0.84rem; color: var(--texto-secundario);">Haz clic en un pin para inspeccionar</span>
+                </div>
+
+                <div class="mapa-cdmx-wrapper">
+                    <svg class="mapa-cdmx-svg" viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Silueta estilizada de la Ciudad de México y vialidades principales -->
+                        <rect width="600" height="440" fill="#EFE8D5"/>
+                        <path d="M165 40 L375 35 L465 110 L490 230 L455 365 L350 415 L205 405 L130 315 L115 175 Z"
+                              fill="#DFECD9" stroke="#1E4D2B" stroke-width="3" stroke-linejoin="round"/>
+                        <!-- Áreas verdes de referencia (Chapultepec / Viveros) -->
+                        <ellipse cx="215" cy="205" rx="38" ry="22" fill="#B8D8BE" />
+                        <ellipse cx="275" cy="348" rx="30" ry="18" fill="#B8D8BE" />
+                        <!-- Avenidas emblemáticas (Insurgentes, Reforma, Circuito Interior, Viaducto) -->
+                        <path d="M310 40 L270 405" stroke="#FFF9F0" stroke-width="6" stroke-dasharray="1" opacity="0.85"/>
+                        <path d="M145 245 L425 140" stroke="#F4C430" stroke-width="5" opacity="0.85"/>
+                        <path d="M135 235 L470 235" stroke="#FFF9F0" stroke-width="4" opacity="0.75"/>
+                        <text x="155" y="228" fill="#546E7A" font-size="10" font-weight="700">AV. PASEO DE LA REFORMA</text>
+                        <text x="282" y="395" fill="#546E7A" font-size="10" font-weight="700">AV. INSURGENTES</text>
+
+                        <!-- PIN 1: POLANCO / REFORMA -->
+                        <g class="zona-pin selected" data-zona="polanco" transform="translate(220, 168)">
+                            <circle class="pin-circle" cx="0" cy="0" r="15" fill="#1E4D2B" stroke="#FFF9F0" stroke-width="3"/>
+                            <text x="0" y="5" text-anchor="middle" fill="#FFF9F0" font-size="12" font-weight="700">1</text>
+                            <rect x="-66" y="-36" width="132" height="20" rx="5" fill="#1E4D2B"/>
+                            <text x="0" y="-22" text-anchor="middle" fill="#F4C430" font-size="10" font-weight="700">Polanco / Reforma</text>
+                        </g>
+
+                        <!-- PIN 2: BUENAVISTA -->
+                        <g class="zona-pin" data-zona="buenavista" transform="translate(320, 128)">
+                            <circle class="pin-circle" cx="0" cy="0" r="15" fill="#1E4D2B" stroke="#FFF9F0" stroke-width="3"/>
+                            <text x="0" y="5" text-anchor="middle" fill="#FFF9F0" font-size="12" font-weight="700">2</text>
+                            <rect x="-48" y="-36" width="96" height="20" rx="5" fill="#263238"/>
+                            <text x="0" y="-22" text-anchor="middle" fill="#FFF9F0" font-size="10" font-weight="700">Buenavista</text>
+                        </g>
+
+                        <!-- PIN 3: CENTRO HISTÓRICO -->
+                        <g class="zona-pin" data-zona="centro" transform="translate(382, 188)">
+                            <circle class="pin-circle" cx="0" cy="0" r="15" fill="#1E4D2B" stroke="#FFF9F0" stroke-width="3"/>
+                            <text x="0" y="5" text-anchor="middle" fill="#FFF9F0" font-size="12" font-weight="700">3</text>
+                            <rect x="-58" y="-36" width="116" height="20" rx="5" fill="#263238"/>
+                            <text x="0" y="-22" text-anchor="middle" fill="#FFF9F0" font-size="10" font-weight="700">Centro Histórico</text>
+                        </g>
+
+                        <!-- PIN 4: NÁPOLES -->
+                        <g class="zona-pin" data-zona="napoles" transform="translate(268, 258)">
+                            <circle class="pin-circle" cx="0" cy="0" r="15" fill="#1E4D2B" stroke="#FFF9F0" stroke-width="3"/>
+                            <text x="0" y="5" text-anchor="middle" fill="#FFF9F0" font-size="12" font-weight="700">4</text>
+                            <rect x="-42" y="-36" width="84" height="20" rx="5" fill="#263238"/>
+                            <text x="0" y="-22" text-anchor="middle" fill="#FFF9F0" font-size="10" font-weight="700">Nápoles</text>
+                        </g>
+
+                        <!-- PIN 5: COYOACÁN -->
+                        <g class="zona-pin" data-zona="coyoacan" transform="translate(318, 338)">
+                            <circle class="pin-circle" cx="0" cy="0" r="15" fill="#1E4D2B" stroke="#FFF9F0" stroke-width="3"/>
+                            <text x="0" y="5" text-anchor="middle" fill="#FFF9F0" font-size="12" font-weight="700">5</text>
+                            <rect x="-46" y="-36" width="92" height="20" rx="5" fill="#263238"/>
+                            <text x="0" y="-22" text-anchor="middle" fill="#FFF9F0" font-size="10" font-weight="700">Coyoacán</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Selector rápido de colonias -->
+                <div class="zona-chips-bar" id="contenedorChipsZonas"></div>
+            </section>
+
+            <!-- Columna Derecha: Tarjeta con información de la zona y formulario de Nombre (Pág. 10 del reporte) -->
+            <section class="card" aria-label="Información de la colonia seleccionada">
+                <div class="zona-info-header">
+                    <div>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--naranja-terracota); text-transform: uppercase;">Zona Seleccionada</span>
+                        <h3 id="zonaTitulo">POLANCO / REFORMA</h3>
+                    </div>
+                    <span class="alcaldia-tag" id="zonaAlcaldia">Miguel Hidalgo</span>
+                </div>
+
+                <p id="zonaDescripcion" style="font-size: 0.92rem; color: var(--texto-secundario); margin-top: 0; margin-bottom: 16px;">
+                    Zona corporativa y financiera con alto flujo matutino de oficinistas y excelente disposición de pago.
+                </p>
+
+                <!-- Indicadores en estrellas tal como especifica la Pantalla 2 del PDF -->
+                <div class="estrellas-lista">
+                    <div class="estrella-fila">
+                        <span class="estrella-label">Demanda:</span>
+                        <span class="estrellas-iconos" id="estrellasDemanda">★★★★★</span>
+                    </div>
+                    <div class="estrella-fila">
+                        <span class="estrella-label">Renta:</span>
+                        <span class="estrellas-iconos" id="estrellasRenta">★★★★★</span>
+                    </div>
+                    <div class="estrella-fila">
+                        <span class="estrella-label">Competencia:</span>
+                        <span class="estrellas-iconos" id="estrellasCompetencia">★★★★☆</span>
+                    </div>
+                    <div class="estrella-fila">
+                        <span class="estrella-label">Flujo de clientes:</span>
+                        <span class="estrellas-iconos" id="estrellasFlujo">★★★★★</span>
+                    </div>
+                </div>
+
+                <div class="zona-metricas-financieras">
+                    <div class="metrica-mini">
+                        <span>Renta / Permiso Diario</span>
+                        <strong id="zonaRentaMonto">$650 / día</strong>
+                    </div>
+                    <div class="metrica-mini">
+                        <span>Clientes Potenciales Base</span>
+                        <strong id="zonaClientesBase">~210 clientes / día</strong>
+                    </div>
+                </div>
+
+                <!-- Formulario para Nombre de tu negocio y botón Continuar -->
+                <form id="formUbicacion" novalidate>
+                    <div class="form-group">
+                        <label for="inputNombreNegocio">Nombre de tu negocio *</label>
+                        <input
+                            type="text"
+                            id="inputNombreNegocio"
+                            class="form-control"
+                            placeholder="Ej. Imperio del Tamal CDMX"
+                            maxlength="50"
+                            required
+                        >
+                        <div class="form-error" id="errorNombreNegocio">
+                            Por favor ingresa un nombre válido para tu negocio (mínimo 3 caracteres).
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="selectAyudantesIniciales">Ayudantes iniciales en el puesto</label>
+                        <select id="selectAyudantesIniciales" class="form-control">
+                            <option value="0">Sin ayudantes (Atiendes tú solo - $0 sueldo/día)</option>
+                            <option value="1" selected>1 Ayudante contratado ($350 sueldo/día - Mayor capacidad)</option>
+                            <option value="2">2 Ayudantes contratados ($700 sueldo/día - Máxima rapidez)</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 22px;">
+                        <a href="index.html" class="btn btn-secondary">← Volver</a>
+                        <button type="submit" class="btn btn-primary" style="flex: 1;">
+                            Continuar ⟶
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/ubicacion.js"></script>
+</body>
+</html>

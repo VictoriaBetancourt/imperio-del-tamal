@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Parcial 2 - Imperio del Tamal (Equipo 09)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-tamal: #1E4D2B;
+            --amarillo-maiz: #F4C430;
+            --naranja-terracota: #E25822;
+            --texto-oscuro: #263238;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #111;
+            background: #e9e9e9;
+            margin: 0;
+            padding: 24px;
+            line-height: 1.55;
+        }
+        .no-print-bar {
+            max-width: 210mm;
+            margin: 0 auto 18px;
+            background: var(--verde-tamal);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-print {
+            background: var(--amarillo-maiz);
+            color: #111;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .page {
+            max-width: 210mm;
+            min-height: 279mm;
+            margin: 0 auto 24px;
+            background: #fff;
+            padding: 22mm 20mm;
+            border: 1px solid #333;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            page-break-after: always;
+        }
+        .portada {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 235mm;
+        }
+        .portada h1 {
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin: 0 0 8px;
+        }
+        .portada h2 {
+            font-size: 1.35rem;
+            font-weight: 400;
+            margin: 0 0 28px;
+        }
+        .portada .proyecto-titulo {
+            font-size: 1.55rem;
+            font-weight: 700;
+            margin: 26px 0 8px;
+        }
+        .portada .integrantes {
+            margin-top: 32px;
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+        h3.seccion {
+            color: #1F4E79;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #D9E2F3;
+            padding-bottom: 4px;
+        }
+        h4.subseccion {
+            color: var(--verde-tamal);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.02rem;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 0 12px;
+            font-size: 0.98rem;
+        }
+        .formula-box {
+            background: #F5F8FC;
+            border-left: 4px solid #1F4E79;
+            padding: 12px 16px;
+            margin: 14px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 18px;
+            font-size: 0.9rem;
+        }
+        th {
+            background: #1F5E79;
+            color: #fff;
+            padding: 9px 12px;
+            text-align: left;
+        }
+        td {
+            border: 1px solid #9BC2E6;
+            padding: 8px 12px;
+            background: #E9F5FB;
+            vertical-align: top;
+        }
+        code {
+            background: #f2f2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 0.88rem;
+        }
+        @media print {
+            body { background: #fff; padding: 0; }
+            .no-print-bar { display: none; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print-bar">
+        <span>📄 <strong>Reporte Entregable Parcial 2 (Temas 2, 3 y 4)</strong> — Listo para guardar como PDF</span>
+        <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button>
+    </div>
+
+    <!-- PÁGINA 1: PORTADA OFICIAL TESE -->
+    <div class="page">
+        <div class="portada">
+            <h1>Tecnológico de Estudios Superiores<br>de Ecatepec.</h1>
+            <h2>División de Ingeniería en Sistemas Computacionales.</h2>
+
+            <div style="font-size: 1.45rem; margin: 18px 0;">
+                <div>Programación Web (AEB-1055).</div>
+                <div style="margin-top: 8px;">Profesora: Alejandra González Sánchez.</div>
+            </div>
+
+            <div class="proyecto-titulo">
+                Proyecto: Imperio del Tamal.<br>
+                Simulador de negocio multisucursal en CDMX.
+            </div>
+            <div style="font-size: 1.25rem; margin-bottom: 18px;">
+                Reporte Técnico de Implementación — Parcial 2:<br>
+                Interfaz Web (Tema 2), Programación del Lado del Cliente (Tema 3)<br>
+                y Programación del Lado del Servidor con Persistencia (Tema 4).
+            </div>
+
+            <div class="integrantes">
+                <strong>Integrantes (Equipo 09):</strong><br>
+                Fernández Martínez Diego (202110011)<br>
+                García Esquivel Mitzi Cecilia (202121190)<br>
+                Montes Betancourt María Victoria (202121271)<br>
+                Tejeda Juárez Ángel Androth (202210130)<br>
+                Zamora Navarro Madelein Laura T (202120404)
+            </div>
+        </div>
+    </div>
+
+    <!-- PÁGINA 2: TEMA 2 Y TEMA 3 (PROGRAMACIÓN DEL LADO DEL CLIENTE) -->
+    <div class="page">
+        <h3 class="seccion">PARTE 1: TEMA 2 — INTERFAZ WEB FUNCIONAL (HTML5, XML Y CSS3)</h3>
+        <p>
+            Siguiendo los lineamientos de identidad visual establecidos en la planeación, se construyó la interfaz completa del simulador utilizando la paleta oficial inspirada en la gastronomía tradicional mexicana: <strong>Verde hoja de tamal (<code>#1E4D2B</code>)</strong>, <strong>Amarillo maíz (<code>#F4C430</code>)</strong>, <strong>Naranja terracota (<code>#E25822</code>)</strong>, <strong>Fondo cálido (<code>#FFF9F0</code>)</strong> y <strong>Texto oscuro (<code>#263238</code>)</strong>, aplicando jerarquía tipográfica con <em>Montserrat</em> para encabezados y <em>Roboto</em> para datos e controles interactivos.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Pantalla / Archivo</th>
+                    <th>Elementos Construidos y Funcionalidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pantalla 1: Inicio</strong><br>(<code>index.html</code>)</td>
+                    <td>Ilustración vectorial de un puesto de tamales tradicional con vapor animado en la vaporera, frase <em>"De un puesto a un imperio"</em>, botón para iniciar una nueva partida y ventana modal conectada al servidor para cargar partidas guardadas.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pantalla 2: Selección de Ubicación</strong><br>(<code>ubicacion.html</code>)</td>
+                    <td>Representación visual interactiva del mapa de la CDMX con pines seleccionables en 5 zonas estratégicas (<strong>Polanco / Reforma</strong>, <strong>Coyoacán</strong>, <strong>Nápoles</strong>, <strong>Centro Histórico</strong> y <strong>Buenavista</strong>). Muestra dinámicamente las calificaciones en estrellas de Demanda, Renta, Competencia y Flujo de clientes, junto con el registro del nombre del negocio.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pantalla 3: Configuración del Menú</strong><br>(<code>menu.html</code>)</td>
+                    <td>Catálogo dividido en <strong>TAMALES</strong> (Verde, Mole, Oaxaqueño, Rajas, Rojo, Chocolate) y <strong>BEBIDAS</strong> (Champurrado, Atole de Vainilla, Café de Olla). Permite activar/desactivar productos y ajustar precios de venta mostrando en vivo la Inversión Inicial (<code>$4,500</code>) y la Ganancia Estimada por día.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pantalla 4: Dashboard Principal</strong><br>(<code>dashboard.html</code>)</td>
+                    <td>Arquitectura SPA con barra lateral de navegación hacia 7 secciones: <em>Dashboard</em>, <em>Sucursales</em>, <em>Crear sucursal</em>, <em>Menú</em>, <em>Ventas</em>, <em>Reportes</em> y <em>Configuración</em>. Incluye el Sistema de Progreso de 5 niveles, gráfica de los últimos 7 días y tabla de desempeño por sucursal.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="seccion">PARTE 2: TEMA 3 — PROGRAMACIÓN DEL LADO DEL CLIENTE</h3>
+        <p>
+            El entregable del Tema 3 requiere descomponer la simulación en módulos manejables del lado del cliente, calcular ventas, costos y ganancias según la colonia, el menú y los precios elegidos por el jugador, validar sus decisiones y actualizar el tablero dinámicamente.
+        </p>
+
+        <h4 class="subseccion">2.1 Descomposición Modular en JavaScript</h4>
+        <ul>
+            <li><strong><code>js/app.js</code> (Módulo Central <code>ImperioApp</code>):</strong> Centraliza el catálogo de colonias de la CDMX, los parámetros del motor financiero en el cliente, el formateo de divisas y el cliente HTTP asíncrono (<code>fetch</code>) para comunicarse con la API REST.</li>
+            <li><strong><code>js/ubicacion.js</code>:</strong> Controla la selección interactiva del mapa de la CDMX, actualiza el DOM con las métricas de la colonia seleccionada y valida que el nombre del negocio sea válido antes de continuar.</li>
+            <li><strong><code>js/menu.js</code>:</strong> Valida en tiempo real que el precio unitario de cada tamal o bebida supere su costo de producción (evitando márgenes negativos) y que al menos un producto permanezca activo, recalculando instantáneamente la proyección diaria.</li>
+            <li><strong><code>js/dashboard.js</code>:</strong> Administra el estado de la partida en el navegador, renderiza la gráfica vectorial SVG de los últimos 7 días, filtra ventas por sede y actualiza tarjetas e indicadores sin recargar la página.</li>
+        </ul>
+
+        <div class="formula-box">
+            Ingreso Total = ∑ (Unidades Vendidas × Precio de Venta)<br>
+            Costos Totales = Costo de Insumos + Sueldos de Ayudantes + Renta por Zona<br>
+            Ganancia Neta = Ingreso Total − Costos Totales
+        </div>
+    </div>
+
+    <!-- PÁGINA 3: TEMA 4 (PROGRAMACIÓN DEL LADO DEL SERVIDOR Y PERSISTENCIA) -->
+    <div class="page">
+        <h3 class="seccion">PARTE 3: TEMA 4 — PROGRAMACIÓN DEL LADO DEL SERVIDOR Y PERSISTENCIA</h3>
+        <p>
+            Para cubrir el Tema 4 del Parcial 2, se implementó el servidor backend en <strong>Node.js (<code>server.js</code>)</strong> bajo una arquitectura Cliente-Servidor en capas comunicada mediante una <strong>API REST</strong>. El servidor procesa las reglas de negocio, persiste las partidas y sucursales del jugador, valida la apertura de nuevas sedes y genera reportes comparativos entre zonas de la Ciudad de México.
+        </p>
+
+        <h4 class="subseccion">3.1 Servicios de la API REST Implementados</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Método y Ruta</th>
+                    <th>Responsabilidad en el Servidor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>GET /api/catalogo</code><br><code>GET /api/catalogo/xml</code></td>
+                    <td>Entrega los parámetros financieros del simulador, niveles de crecimiento (Nivel 1 a 5), zonas de la CDMX y productos base en formato JSON y XML (<code>data/catalogo.xml</code>).</td>
+                </tr>
+                <tr>
+                    <td><code>GET /api/partidas</code><br><code>POST /api/partidas</code><br><code>PUT /api/partidas/:id</code></td>
+                    <td>Permite listar, crear y actualizar partidas guardadas en el servidor (<code>data/partidas.json</code>), asegurando la persistencia de dinero disponible, menú, popularidad y sucursales.</td>
+                </tr>
+                <tr>
+                    <td><code>POST /api/partidas/:id/simular</code></td>
+                    <td>Ejecuta en el servidor la simulación de un nuevo día operativo para todas las sucursales activas, actualiza la serie de los últimos 7 días y sincroniza la bitácora en <code>data/historial_ventas.csv</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>POST /api/partidas/:id/sucursales</code></td>
+                    <td>Valida el capital disponible (<code>$4,500</code> de inversión de apertura) y los datos de ubicación (colonia, alcaldía, código postal y dirección) para inaugurar una nueva sucursal en la CDMX.</td>
+                </tr>
+                <tr>
+                    <td><code>POST /api/partidas/:id/ayudantes</code></td>
+                    <td>Procesa la contratación de nuevos ayudantes por sucursal (<code>$600</code> de contratación y <code>$350/día</code> de sueldo), incrementando en <code>+65</code> unidades diarias la capacidad de atención del puesto.</td>
+                </tr>
+                <tr>
+                    <td><code>GET /api/partidas/:id/reportes</code></td>
+                    <td>Genera el <strong>Reporte Comparativo entre Zonas y Sucursales</strong>: evalúa el desglose de costos (Insumos, Sueldos, Renta), calcula el Retorno de Inversión (ROI) en días para cada colonia de la CDMX y emite una recomendación estratégica para el plan de expansión.</td>
+                </tr>
+                <tr>
+                    <td><code>GET /api/partidas/:id/exportar/:formato</code></td>
+                    <td>Permite descargar los reportes y el estado completo de la partida en formatos estructurados <strong>JSON</strong>, <strong>XML</strong> y <strong>CSV</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 class="subseccion">3.2 Persistencia en Archivos Estructurados (Capa de Datos)</h4>
+        <ul>
+            <li><strong><code>data/partidas.json</code>:</strong> Almacenamiento estructurado JSON de todas las partidas, sucursales activas, configuración de precios e historial financiero de los últimos 7 días.</li>
+            <li><strong><code>data/catalogo.xml</code>:</strong> Documento XML válido que modela jerárquicamente los parámetros iniciales, los 5 niveles de progreso, las colonias de la CDMX y las categorías de productos.</li>
+            <li><strong><code>data/historial_ventas.csv</code>:</strong> Registro tabular separado por comas con el detalle histórico de ventas por fecha, día simulado, sucursal, producto, cantidad y monto total.</li>
+        </ul>
+
+        <h4 class="subseccion">3.3 Conclusión Técnica del Parcial 2</h4>
+        <p>
+            Con la integración de los módulos del cliente (Tema 3) y del servidor (Tema 4), <strong>Imperio del Tamal</strong> opera como una aplicación web dinámica completa: el jugador toma decisiones estratégicas basadas en datos reales por zona de la CDMX, recibe retroalimentación inmediata en la interfaz y cuenta con persistencia multi-formato lista para su despliegue en la nube en el Parcial 3 (Tema 5).
+        </p>
+    </div>
+</body>
+</html>

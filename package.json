@@ -1,0 +1,23 @@
+{
+  "name": "imperio-del-tamal",
+  "version": "2.0.0",
+  "description": "Simulador de negocio multisucursal de tamales en la CDMX - Programación Web (Parcial 2: Cliente y Servidor)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "tamales",
+    "simulador",
+    "cdmx",
+    "multisucursal",
+    "programacion-web",
+    "equipo-09"
+  ],
+  "author": "Equipo 09 - TESE (Montes Betancourt, Zamora Navarro, Tejeda Juárez, Fernández Martínez, García Esquivel)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

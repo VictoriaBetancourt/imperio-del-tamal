@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImperioDelTamal version="2.0" ciudad="Ciudad de México">
+    <ParametrosIniciales>
+        <CapitalInicial>15000</CapitalInicial>
+        <InversionPuestoInicial>4500</InversionPuestoInicial>
+        <SueldoDiarioAyudante>350</SueldoDiarioAyudante>
+        <CostoContratacionAyudante>600</CostoContratacionAyudante>
+        <CapacidadBaseSinAyudantes>90</CapacidadBaseSinAyudantes>
+        <CapacidadExtraPorAyudante>65</CapacidadExtraPorAyudante>
+    </ParametrosIniciales>
+
+    <NivelesProgreso>
+        <Nivel numero="1" nombre="PUESTO DE BARRIO" metaGananciaAcumulada="0" metaSucursales="1" descripcion="Inicias con tu primera vaporera en las calles de la CDMX." />
+        <Nivel numero="2" nombre="NEGOCIO LOCAL" metaGananciaAcumulada="5000" metaSucursales="1" descripcion="Los vecinos ya conocen tu sazón y haces fila cada mañana." />
+        <Nivel numero="3" nombre="NEGOCIO CONSOLIDADO" metaGananciaAcumulada="20000" metaSucursales="2" descripcion="Alcanzas $20,000 de ganancias acumuladas y te expandes a nuevas colonias." />
+        <Nivel numero="4" nombre="CADENA DE TAMALES" metaGananciaAcumulada="45000" metaSucursales="3" descripcion="Operas múltiples sucursales estratégicas en distintas alcaldías." />
+        <Nivel numero="5" nombre="IMPERIO DEL TAMAL" metaGananciaAcumulada="80000" metaSucursales="4" descripcion="Dominas el mercado gastronómico matutino y nocturno de la CDMX." />
+    </NivelesProgreso>
+
+    <ZonasCDMX>
+        <Zona id="polanco" nombre="Polanco / Reforma" alcaldia="Miguel Hidalgo" codigoPostal="11560">
+            <Demanda estrellas="5" clientesBase="210" elasticidadPrecio="0.85" />
+            <Renta estrellas="5" costoDiario="650" costoApertura="6500" />
+            <Competencia estrellas="4" factorCompetencia="0.90" />
+            <FlujoClientes estrellas="5" horarioPico="07:00 - 11:00 hrs (Oficinas y Corporativos)" />
+            <Descripcion>Zona corporativa y de embajadas con alto poder adquisitivo y gran flujo matutino de oficinistas.</Descripcion>
+        </Zona>
+        <Zona id="coyoacan" nombre="Coyoacán" alcaldia="Coyoacán" codigoPostal="04000">
+            <Demanda estrellas="4" clientesBase="165" elasticidadPrecio="1.00" />
+            <Renta estrellas="3" costoDiario="400" costoApertura="4500" />
+            <Competencia estrellas="3" factorCompetencia="0.95" />
+            <FlujoClientes estrellas="4" horarioPico="08:00 - 12:00 y 18:00 - 22:00 hrs (Turístico y Familiar)" />
+            <Descripcion>Ambiente bohemio, cultural y familiar con alta demanda de tamales tradicionales y atoles por la tarde-noche.</Descripcion>
+        </Zona>
+        <Zona id="napoles" nombre="Nápoles" alcaldia="Benito Juárez" codigoPostal="03810">
+            <Demanda estrellas="4" clientesBase="175" elasticidadPrecio="0.95" />
+            <Renta estrellas="4" costoDiario="500" costoApertura="5200" />
+            <Competencia estrellas="3" factorCompetencia="0.94" />
+            <FlujoClientes estrellas="4" horarioPico="07:30 - 11:30 hrs (Mixto: Oficinas WTC y Residencial)" />
+            <Descripcion>Equilibrio ideal entre oficinas cercanas al WTC y residentes que buscan desayuno diario de calidad.</Descripcion>
+        </Zona>
+        <Zona id="centro" nombre="Centro Histórico" alcaldia="Cuauhtémoc" codigoPostal="06000">
+            <Demanda estrellas="5" clientesBase="230" elasticidadPrecio="1.15" />
+            <Renta estrellas="4" costoDiario="520" costoApertura="5000" />
+            <Competencia estrellas="5" factorCompetencia="0.85" />
+            <FlujoClientes estrellas="5" horarioPico="06:30 - 13:00 hrs (Comercio y Tránsito Masivo)" />
+            <Descripcion>El corazón comercial de la CDMX: altísimo flujo peatonal que premia precios accesibles y atención rápida.</Descripcion>
+        </Zona>
+        <Zona id="buenavista" nombre="Buenavista" alcaldia="Cuauhtémoc" codigoPostal="06350">
+            <Demanda estrellas="4" clientesBase="180" elasticidadPrecio="1.05" />
+            <Renta estrellas="3" costoDiario="420" costoApertura="4500" />
+            <Competencia estrellas="3" factorCompetencia="0.93" />
+            <FlujoClientes estrellas="5" horarioPico="06:00 - 10:30 hrs (Confluencia Metro, Metrobús y Suburbano)" />
+            <Descripcion>Nodo de transporte estratégico con miles de viajeros y estudiantes buscando desayuno rápido para llevar.</Descripcion>
+        </Zona>
+    </ZonasCDMX>
+
+    <CatalogoProductos>
+        <Categoria id="tamales" nombre="TAMALES">
+            <Producto id="tamal-verde" nombre="Tamal Verde" costo="12.00" precioSugerido="25.00" icono="🫔" activoDefault="true" descripcion="Tamal tradicional de salsa verde de tomate con carne de cerdo." />
+            <Producto id="tamal-mole" nombre="Tamal de Mole" costo="13.00" precioSugerido="26.00" icono="🍫" activoDefault="true" descripcion="Tamal acompañado de mole poblano artesanal y pollo deshebrado." />
+            <Producto id="tamal-oaxaqueno" nombre="Tamal Oaxaqueño" costo="15.00" precioSugerido="30.00" icono="🌿" activoDefault="true" descripcion="Envuelto en hoja de plátano con mole negro o salsa roja especial." />
+            <Producto id="tamal-rajas" nombre="Tamal de Rajas" costo="12.00" precioSugerido="25.00" icono="🌶️" activoDefault="true" descripcion="Rajas de chile poblano con queso panela y jitomate." />
+            <Producto id="tamal-rojo" nombre="Tamal Rojo" costo="12.00" precioSugerido="25.00" icono="🍅" activoDefault="false" descripcion="Tamal de salsa roja de guajillo con pollo." />
+            <Producto id="tamal-dulce" nombre="Tamal de Chocolate / Dulce" costo="13.00" precioSugerido="26.00" icono="🍓" activoDefault="false" descripcion="Tamal dulce esponjoso con pasas o chocolate tradicional." />
+        </Categoria>
+        <Categoria id="bebidas" nombre="BEBIDAS">
+            <Producto id="champurrado" nombre="Champurrado" costo="9.00" precioSugerido="22.00" icono="☕" activoDefault="true" descripcion="Bebida caliente de masa de maíz, chocolate de mesa y piloncillo." />
+            <Producto id="atole-vainilla" nombre="Atole de Vainilla" costo="8.00" precioSugerido="20.00" icono="🥛" activoDefault="true" descripcion="Atole tradicional mexicano cremoso con esencia natural de vainilla." />
+            <Producto id="cafe-olla" nombre="Café de Olla" costo="7.00" precioSugerido="20.00" icono="🏺" activoDefault="true" descripcion="Café tradicional mexicano infusionado con canela y piloncillo." />
+        </Categoria>
+    </CatalogoProductos>
+</ImperioDelTamal>

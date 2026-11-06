@@ -1,0 +1,354 @@
+[
+  {
+    "id": "partida-demo-1",
+    "nombreNegocio": "Imperio del Tamal CDMX",
+    "fechaCreacion": "2026-10-01T08:00:00.000Z",
+    "ultimaActualizacion": "2026-11-06T12:00:00.000Z",
+    "diaActual": 7,
+    "dineroDisponible": 12450,
+    "gananciaAcumulada": 16000,
+    "popularidad": 85,
+    "nivel": {
+      "numero": 2,
+      "nombre": "NEGOCIO LOCAL",
+      "progresoPorcentaje": 80,
+      "proximoObjetivo": "Alcanza $20,000 de ganancias acumuladas para desbloquear el Nivel 3 (Negocio Consolidado) y expandir tu red."
+    },
+    "resumenHoy": {
+      "ventasHoy": 6300,
+      "costosHoy": 3350,
+      "gananciaHoy": 2950,
+      "unidadesVendidasHoy": 252
+    },
+    "menu": [
+      {
+        "id": "tamal-verde",
+        "categoria": "TAMALES",
+        "nombre": "Tamal Verde",
+        "descripcion": "Tamal tradicional de salsa verde de tomate con carne de cerdo.",
+        "costo": 12,
+        "precio": 25,
+        "icono": "🫔",
+        "activo": true
+      },
+      {
+        "id": "tamal-mole",
+        "categoria": "TAMALES",
+        "nombre": "Tamal de Mole",
+        "descripcion": "Tamal acompañado de mole poblano artesanal y pollo deshebrado.",
+        "costo": 13,
+        "precio": 26,
+        "icono": "🍫",
+        "activo": true
+      },
+      {
+        "id": "tamal-oaxaqueno",
+        "categoria": "TAMALES",
+        "nombre": "Tamal Oaxaqueño",
+        "descripcion": "Envuelto en hoja de plátano con mole negro o salsa roja especial.",
+        "costo": 15,
+        "precio": 30,
+        "icono": "🌿",
+        "activo": true
+      },
+      {
+        "id": "tamal-rajas",
+        "categoria": "TAMALES",
+        "nombre": "Tamal de Rajas",
+        "descripcion": "Rajas de chile poblano con queso panela y jitomate.",
+        "costo": 12,
+        "precio": 25,
+        "icono": "🌶️",
+        "activo": true
+      },
+      {
+        "id": "tamal-rojo",
+        "categoria": "TAMALES",
+        "nombre": "Tamal Rojo",
+        "descripcion": "Tamal de salsa roja de guajillo con pollo.",
+        "costo": 12,
+        "precio": 28,
+        "icono": "🍅",
+        "activo": false
+      },
+      {
+        "id": "tamal-dulce",
+        "categoria": "TAMALES",
+        "nombre": "Tamal de Chocolate",
+        "descripcion": "Tamal dulce con sabor a chocolate tradicional.",
+        "costo": 13,
+        "precio": 30,
+        "icono": "🍓",
+        "activo": false
+      },
+      {
+        "id": "champurrado",
+        "categoria": "BEBIDAS",
+        "nombre": "Champurrado",
+        "descripcion": "Bebida caliente de masa de maíz, chocolate de mesa y piloncillo.",
+        "costo": 9,
+        "precio": 22,
+        "icono": "☕",
+        "activo": true
+      },
+      {
+        "id": "atole-vainilla",
+        "categoria": "BEBIDAS",
+        "nombre": "Atole de Vainilla",
+        "descripcion": "Atole tradicional mexicano cremoso con esencia natural de vainilla.",
+        "costo": 8,
+        "precio": 20,
+        "icono": "🥛",
+        "activo": true
+      },
+      {
+        "id": "cafe-olla",
+        "categoria": "BEBIDAS",
+        "nombre": "Café de Olla",
+        "descripcion": "Café tradicional mexicano infusionado con canela y piloncillo.",
+        "costo": 7,
+        "precio": 20,
+        "icono": "🏺",
+        "activo": true
+      }
+    ],
+    "sucursales": [
+      {
+        "id": "suc-polanco",
+        "nombre": "Sucursal Polanco",
+        "zonaId": "polanco",
+        "colonia": "Polanco / Reforma",
+        "alcaldia": "Miguel Hidalgo",
+        "codigoPostal": "11560",
+        "direccion": "Av. Presidente Masaryk 142, Polanco",
+        "descripcion": "Puesto principal en zona de oficinas con alto flujo matutino.",
+        "ayudantes": 2,
+        "popularidadEstrellas": 5,
+        "estado": "Activa",
+        "ventasHoy": 3500,
+        "insumosHoy": 1100,
+        "sueldosHoy": 50,
+        "rentaHoy": 650,
+        "costosHoy": 1800,
+        "gananciaHoy": 1700,
+        "unidadesHoy": 140,
+        "ventasAcumuladas": 23800,
+        "costosAcumulados": 12600,
+        "gananciaAcumulada": 11200
+      },
+      {
+        "id": "suc-coyoacan",
+        "nombre": "Sucursal Coyoacán",
+        "zonaId": "coyoacan",
+        "colonia": "Coyoacán",
+        "alcaldia": "Coyoacán",
+        "codigoPostal": "04000",
+        "direccion": "Jardín Centenario 18, Villa Coyoacán",
+        "descripcion": "Segunda sede frente a la plaza con alta venta vespertina de atoles.",
+        "ayudantes": 1,
+        "popularidadEstrellas": 4,
+        "estado": "Activa",
+        "ventasHoy": 2800,
+        "insumosHoy": 800,
+        "sueldosHoy": 350,
+        "rentaHoy": 400,
+        "costosHoy": 1550,
+        "gananciaHoy": 1250,
+        "unidadesHoy": 112,
+        "ventasAcumuladas": 11400,
+        "costosAcumulados": 6600,
+        "gananciaAcumulada": 4800
+      }
+    ],
+    "historial7Dias": [
+      { "dia": 1, "etiqueta": "Día 1", "ventas": 2900, "costos": 1650, "ganancia": 1250, "unidades": 116 },
+      { "dia": 2, "etiqueta": "Día 2", "ventas": 3250, "costos": 1720, "ganancia": 1530, "unidades": 130 },
+      { "dia": 3, "etiqueta": "Día 3", "ventas": 3400, "costos": 1760, "ganancia": 1640, "unidades": 136 },
+      { "dia": 4, "etiqueta": "Día 4", "ventas": 4850, "costos": 2750, "ganancia": 2100, "unidades": 194 },
+      { "dia": 5, "etiqueta": "Día 5", "ventas": 5400, "costos": 2980, "ganancia": 2420, "unidades": 216 },
+      { "dia": 6, "etiqueta": "Día 6", "ventas": 5900, "costos": 3190, "ganancia": 2710, "unidades": 236 },
+      { "dia": 7, "etiqueta": "Día 7", "ventas": 6300, "costos": 3350, "ganancia": 2950, "unidades": 252 }
+    ],
+    "registroVentas": [
+      { "id": "v-101", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-polanco", "sucursal": "Polanco / Reforma", "producto": "Tamal Verde", "cantidad": 48, "precioUnitario": 25, "total": 1200 },
+      { "id": "v-102", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-polanco", "sucursal": "Polanco / Reforma", "producto": "Tamal Oaxaqueño", "cantidad": 35, "precioUnitario": 30, "total": 1050 },
+      { "id": "v-103", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-polanco", "sucursal": "Polanco / Reforma", "producto": "Champurrado", "cantidad": 35, "precioUnitario": 22, "total": 770 },
+      { "id": "v-104", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-polanco", "sucursal": "Polanco / Reforma", "producto": "Café de Olla", "cantidad": 24, "precioUnitario": 20, "total": 480 },
+      { "id": "v-105", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-coyoacan", "sucursal": "Coyoacán", "producto": "Tamal de Mole", "cantidad": 40, "precioUnitario": 26, "total": 1040 },
+      { "id": "v-106", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-coyoacan", "sucursal": "Coyoacán", "producto": "Tamal de Rajas", "cantidad": 36, "precioUnitario": 25, "total": 900 },
+      { "id": "v-107", "fecha": "06/11/2026", "dia": 7, "sucursalId": "suc-coyoacan", "sucursal": "Coyoacán", "producto": "Atole de Vainilla", "cantidad": 43, "precioUnitario": 20, "total": 860 },
+      { "id": "v-108", "fecha": "05/11/2026", "dia": 6, "sucursalId": "suc-polanco", "sucursal": "Polanco / Reforma", "producto": "Tamal Verde", "cantidad": 44, "precioUnitario": 25, "total": 1100 },
+      { "id": "v-109", "fecha": "05/11/2026", "dia": 6, "sucursalId": "suc-coyoacan", "sucursal": "Coyoacán", "producto": "Tamal Oaxaqueño", "cantidad": 30, "precioUnitario": 30, "total": 900 }
+    ]
+  },
+  {
+    "id": "partida-demo-2",
+    "nombreNegocio": "Cadena Tradicional Equipo 09",
+    "fechaCreacion": "2026-10-01T10:00:00.000Z",
+    "ultimaActualizacion": "2026-11-06T12:00:00.000Z",
+    "diaActual": 12,
+    "dineroDisponible": 28450,
+    "gananciaAcumulada": 21340,
+    "popularidad": 92,
+    "nivel": {
+      "numero": 3,
+      "nombre": "NEGOCIO CONSOLIDADO",
+      "progresoPorcentaje": 65,
+      "proximoObjetivo": "Alcanza $45,000 de ganancias acumuladas para llegar a Nivel 4 (Cadena de Tamales)."
+    },
+    "resumenHoy": {
+      "ventasHoy": 9640,
+      "costosHoy": 5120,
+      "gananciaHoy": 4520,
+      "unidadesVendidasHoy": 385
+    },
+    "menu": [
+      {
+        "id": "tamal-verde",
+        "categoria": "TAMALES",
+        "nombre": "Tamal Verde",
+        "descripcion": "Tamal tradicional de salsa verde de tomate con carne de cerdo.",
+        "costo": 12,
+        "precio": 25,
+        "icono": "🫔",
+        "activo": true
+      },
+      {
+        "id": "tamal-rojo",
+        "categoria": "TAMALES",
+        "nombre": "Tamal Rojo",
+        "descripcion": "Tamal de salsa roja con pollo.",
+        "costo": 12,
+        "precio": 28,
+        "icono": "🍅",
+        "activo": true
+      },
+      {
+        "id": "tamal-mole",
+        "categoria": "TAMALES",
+        "nombre": "Tamal de Mole",
+        "descripcion": "Tamal acompañado de mole poblano.",
+        "costo": 13,
+        "precio": 30,
+        "icono": "🍫",
+        "activo": true
+      },
+      {
+        "id": "tamal-dulce",
+        "categoria": "TAMALES",
+        "nombre": "Tamal de Chocolate",
+        "descripcion": "Tamal dulce con sabor a chocolate.",
+        "costo": 13,
+        "precio": 30,
+        "icono": "🍓",
+        "activo": true
+      },
+      {
+        "id": "atole-vainilla",
+        "categoria": "BEBIDAS",
+        "nombre": "Atole de Vainilla",
+        "descripcion": "Atole tradicional mexicano.",
+        "costo": 8,
+        "precio": 20,
+        "icono": "🥛",
+        "activo": true
+      },
+      {
+        "id": "cafe-olla",
+        "categoria": "BEBIDAS",
+        "nombre": "Café de Olla",
+        "descripcion": "Café tradicional mexicano.",
+        "costo": 7,
+        "precio": 25,
+        "icono": "🏺",
+        "activo": true
+      }
+    ],
+    "sucursales": [
+      {
+        "id": "suc-centro",
+        "nombre": "Centro Histórico",
+        "zonaId": "centro",
+        "colonia": "Centro Histórico",
+        "alcaldia": "Cuauhtémoc",
+        "codigoPostal": "06000",
+        "direccion": "Av. Francisco I. Madero 54, Centro",
+        "descripcion": "Sucursal insignia en el corredor peatonal del Centro.",
+        "ayudantes": 2,
+        "popularidadEstrellas": 5,
+        "estado": "Activa",
+        "ventasHoy": 3950,
+        "insumosHoy": 1380,
+        "sueldosHoy": 700,
+        "rentaHoy": 520,
+        "costosHoy": 2600,
+        "gananciaHoy": 1350,
+        "unidadesHoy": 158,
+        "ventasAcumuladas": 15800,
+        "costosAcumulados": 8600,
+        "gananciaAcumulada": 7200
+      },
+      {
+        "id": "suc-buenavista",
+        "nombre": "Buenavista",
+        "zonaId": "buenavista",
+        "colonia": "Buenavista",
+        "alcaldia": "Cuauhtémoc",
+        "codigoPostal": "06350",
+        "direccion": "Eje 1 Norte Mosqueta s/n, Buenavista",
+        "descripcion": "Puesto de alto flujo frente a la terminal de transporte.",
+        "ayudantes": 2,
+        "popularidadEstrellas": 4,
+        "estado": "Activa",
+        "ventasHoy": 3120,
+        "insumosHoy": 1050,
+        "sueldosHoy": 350,
+        "rentaHoy": 420,
+        "costosHoy": 1820,
+        "gananciaHoy": 1300,
+        "unidadesHoy": 124,
+        "ventasAcumuladas": 12450,
+        "costosAcumulados": 6650,
+        "gananciaAcumulada": 5800
+      },
+      {
+        "id": "suc-coyoacan-2",
+        "nombre": "Coyoacán",
+        "zonaId": "coyoacan",
+        "colonia": "Coyoacán",
+        "alcaldia": "Coyoacán",
+        "codigoPostal": "04000",
+        "direccion": "Ignacio Allende 32, Del Carmen",
+        "descripcion": "Sucursal tradicional del sur de la CDMX.",
+        "ayudantes": 1,
+        "popularidadEstrellas": 4,
+        "estado": "Activa",
+        "ventasHoy": 2570,
+        "insumosHoy": 850,
+        "sueldosHoy": 350,
+        "rentaHoy": 400,
+        "costosHoy": 1600,
+        "gananciaHoy": 970,
+        "unidadesHoy": 103,
+        "ventasAcumuladas": 10270,
+        "costosAcumulados": 5370,
+        "gananciaAcumulada": 4900
+      }
+    ],
+    "historial7Dias": [
+      { "dia": 6, "etiqueta": "Día 6", "ventas": 6800, "costos": 3800, "ganancia": 3000, "unidades": 272 },
+      { "dia": 7, "etiqueta": "Día 7", "ventas": 7200, "costos": 4020, "ganancia": 3180, "unidades": 288 },
+      { "dia": 8, "etiqueta": "Día 8", "ventas": 7900, "costos": 4300, "ganancia": 3600, "unidades": 315 },
+      { "dia": 9, "etiqueta": "Día 9", "ventas": 8350, "costos": 4510, "ganancia": 3840, "unidades": 334 },
+      { "dia": 10, "etiqueta": "Día 10", "ventas": 8800, "costos": 4720, "ganancia": 4080, "unidades": 352 },
+      { "dia": 11, "etiqueta": "Día 11", "ventas": 9200, "costos": 4900, "ganancia": 4300, "unidades": 368 },
+      { "dia": 12, "etiqueta": "Día 12", "ventas": 9640, "costos": 5120, "ganancia": 4520, "unidades": 385 }
+    ],
+    "registroVentas": [
+      { "id": "v-201", "fecha": "01/10/2026", "dia": 12, "sucursalId": "suc-centro", "sucursal": "Centro Histórico", "producto": "Tamal Verde", "cantidad": 25, "precioUnitario": 25, "total": 625 },
+      { "id": "v-202", "fecha": "01/10/2026", "dia": 12, "sucursalId": "suc-buenavista", "sucursal": "Buenavista", "producto": "Tamal Rojo", "cantidad": 30, "precioUnitario": 28, "total": 840 },
+      { "id": "v-203", "fecha": "01/10/2026", "dia": 12, "sucursalId": "suc-coyoacan-2", "sucursal": "Coyoacán", "producto": "Tamal de Mole", "cantidad": 18, "precioUnitario": 30, "total": 540 },
+      { "id": "v-204", "fecha": "01/10/2026", "dia": 12, "sucursalId": "suc-centro", "sucursal": "Centro Histórico", "producto": "Atole de Vainilla", "cantidad": 20, "precioUnitario": 20, "total": 400 }
+    ]
+  }
+]
